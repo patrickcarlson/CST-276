@@ -31,10 +31,10 @@ namespace Assignment_1
     abstract class Morg
     {
         private bool living;
-        //private double location;
-        //private int direction; //type?
-       // private List<IMorgObservers> observers;
-
+        private int[] location;
+        private int direction; //type?
+        private List<IMorgObservers> observers;
+        private Morg prey;
         public Morg(/*double cLocation, int cDirection*/)
         {
             living = true;
@@ -49,6 +49,21 @@ namespace Assignment_1
                 living = false;
             else
                 living = true;
+        }
+
+        public void UpdateLocation()
+        {
+
+        }
+
+        public void UpdateLiveness()
+        {
+
+        }
+
+        public void Move(int[] newLocation)
+        {
+
         }
 
         public void registerObserver(IMorgObservers o)
